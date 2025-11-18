@@ -12,12 +12,12 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-12 lg:gap-16 mb-16">
           <div className="space-y-6">
             <div className="flex items-center gap-3">
-              <div className="w-17 h-17 flex justify-center items-center rounded-4xl">
-                <img src="./logo.jpeg" alt="logo" width={200} height={200} className="rounded-4xl" />
+              <div className="w-17 h-17 flex justify-center items-center">
+                <img src="./logo.jpeg" alt="logo" width={200} height={200} />
               </div>
               <div>
                 <h3 className="text-white font-black">Alfa Automotive</h3>
-                <p className="text-white/60 text-xs tracking-widest uppercase">
+                <p className="text-white/60 text-xs tracking-widest uppercase rounded-2xl">
                   Expert Mechanics
                 </p>
               </div>
