@@ -13,7 +13,7 @@ export function ContactSection() {
   const handleBooking = (e: React.FormEvent) => {
     e.preventDefault();
     const whatsappMsg = `Booking Request:%0AName: ${formData.name}%0APhone: ${formData.phone}%0AService: ${formData.service}%0AMessage: ${formData.message}`;
-    window.location.href = `https://wa.me/61481374525?text=${whatsappMsg}`;
+    window.location.href = `https://wa.me/9809820098?text=${whatsappMsg}`;
     setFormData({ name: '', phone: '', service: '', message: '' });
   };
 
