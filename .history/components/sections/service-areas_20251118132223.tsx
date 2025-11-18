@@ -35,7 +35,7 @@ export function ServiceAreasSection() {
 
         <div className="text-center bg-gradient-to-br from-primary/5 to-accent/5 rounded-3xl p-12 border border-primary/10 luxury-shadow animate-fade-in">
           <p className="text-lg text-foreground/80 mb-6 font-medium">
-            Don't see your area? Contact us! We service all of ACT, including emergency responses.
+            Don't see your area? Contact us! We service all of ACT, including emergency responses 24/7.
           </p>
           <a 
             href="https://wa.me/61481374525?text=Is%20my%20area%20covered%20for%20mobile%20service?"

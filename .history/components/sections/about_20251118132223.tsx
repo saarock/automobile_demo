@@ -35,7 +35,7 @@ export function AboutSection() {
                 "Licensed & Insured Mechanics",
                 "Fully Equipped Mobile Workshops",
                 "Same-Day Service Available",
-                // "24/7 Emergency Breakdown Support",
+                "24/7 Emergency Breakdown Support",
                 "Transparent Pricing & Digital Reports"
               ].map((feature, index) => (
                 <div key={index} className="flex items-center gap-3 text-foreground font-medium group">
