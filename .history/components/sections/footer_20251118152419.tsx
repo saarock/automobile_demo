@@ -147,7 +147,7 @@ export function Footer() {
         <div className="border-t border-white/10 pt-10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <p className="text-white/50 text-xs">
-              © {new Date().getFullYear().toString() } Alfa Automotive Mobile. All rights reserved.
+              © {new Date().getFullYear()} Alfa Automotive Mobile. All rights reserved.
             </p>
             <div className="flex gap-8 text-xs text-white/50">
               <a

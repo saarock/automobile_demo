@@ -23,7 +23,7 @@ export function HeroSection() {
         <img
           src="/van.jpg"
           alt="Mobile mechanics service van at customer location"
-          className="w-full h-full object-cover bg-center bg-no-repeat bg-cover"
+          className="w-full h-full object-contain"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/85 to-white/40"></div>
       </div>

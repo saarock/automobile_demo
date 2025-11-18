@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Button } from "../ui/button";
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -184,8 +185,9 @@ export function ContactSection() {
               </div>
 
               {/* Submit Button */}
-              <button
+              <Button
                 type="submit"
+                size={'icon-lg'}
                 disabled={submitted}
                 className={`w-full py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 active:scale-95 ${
                   submitted 
@@ -194,7 +196,7 @@ export function ContactSection() {
                 }`}
               >
                 {submitted ? '✓ Redirecting to WhatsApp...' : '📱 Send Booking via WhatsApp'}
-              </button>
+              </Button>
             </form>
 
             <div className="mt-6 p-4 bg-blue-500/10 border border-blue-500/20 rounded-xl">

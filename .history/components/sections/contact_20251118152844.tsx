@@ -4,26 +4,18 @@ import { useState } from "react";
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    location: '',
-    service: '',
-    message: ''
+    name: "",
+    phone: "",
+    service: "",
+    message: "",
   });
-
-  const [submitted, setSubmitted] = useState(false);
 
   const handleBooking = (e: React.FormEvent) => {
     e.preventDefault();
-    const whatsappMsg = `Booking Request:%0AName: ${formData.name}%0APhone: ${formData.phone}%0ALocation: ${formData.location}%0AService: ${formData.service}%0AMessage: ${formData.message}`;
+    const whatsappMsg = `Booking Request:%0AName: ${formData.name}%0APhone: ${formData.phone}%0AService: ${formData.service}%0AMessage: ${formData.message}`;
     window.location.href = `https://wa.me/61481374525?text=${whatsappMsg}`;
-    setSubmitted(true);
-    setTimeout(() => {
-      setFormData({ name: '', phone: '', location: '', service: '', message: '' });
-      setSubmitted(false);
-    }, 1500);
+    setFormData({ name: "", phone: "", service: "", message: "" });
   };
-
 
   return (
     <section id="contact" className="py-20 lg:py-32 bg-white">
@@ -203,7 +195,6 @@ export function ContactSection() {
               </p>
             </div>
           </div>
-      </div>
       </div>
     </section>
   );
