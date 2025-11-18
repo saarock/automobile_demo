@@ -10,14 +10,6 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Alfa Automotive",
   description: "Created by Saarock with next js",
-  icons: {
-    icon: [
-      {
-        url: "/logo_white.svg",
-        type: "image/svg+xml",
-      },
-    ],
-  },
 };
 
 export default function RootLayout({
@@ -29,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`font-sans antialiased`}>
         {children}
-        <Analytics />
+        {/* <Analytics /> */}
       </body>
     </html>
   );

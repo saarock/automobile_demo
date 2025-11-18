@@ -12,8 +12,9 @@ export const metadata: Metadata = {
   description: "Created by Saarock with next js",
   icons: {
     icon: [
+   
       {
-        url: "/logo_white.svg",
+        url: "/logo_light.svg",
         type: "image/svg+xml",
       },
     ],
