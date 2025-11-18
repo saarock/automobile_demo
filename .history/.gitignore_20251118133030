@@ -1,0 +1,12 @@
+# Ignore node_modules
+/node_modules
+
+# Ignore .next directory (used by Next.js)
+.next
+
+# Optional: Ignore other common folders/files
+/.env
+/dist
+/.vite
+/.idea
+.DS_Store
