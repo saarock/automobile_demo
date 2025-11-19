@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 export function HeroSection() {
   const [showCallback, setShowCallback] = useState(false);
@@ -20,10 +21,12 @@ export function HeroSection() {
   return (
     <section className="relative bg-white py-20 lg:py-32 min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
-        <img
+        <Image
           src="/van_org.jpg"
           alt="Mobile mechanics service van at customer location"
           className="w-full h-full object-cover bg-center bg-no-repeat bg-cover"
+          height={200}
+          width={200}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/85 to-white/40"></div>
       </div>
