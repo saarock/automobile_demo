@@ -118,9 +118,15 @@ export function ContactSection() {
               </p>
             </div>
 
-            <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-red-500 rounded-full mb-8"></div>
+            <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-red-500 rounded-full mb-8">
+
+            </div>
 
             <form onSubmit={handleBooking} className="space-y-5">
+              <div>
+                <img src="van_org.JPG" alt="van image"  />
+
+              </div>
               {/* Name and Phone Row */}
               <div className="grid md:grid-cols-2 gap-5">
                 <div className="group">

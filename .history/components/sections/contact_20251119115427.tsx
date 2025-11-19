@@ -107,7 +107,7 @@ export function ContactSection() {
         </div>
 
         <div className="max-w-3xl mx-auto">
-          <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white rounded-3xl p-10 lg:p-14 shadow-2xl border border-slate-700">
+          <div className=" bg-amber-500">
             <div className="mb-2">
               <h3 className="font-black text-2xl lg:text-3xl mb-2">
                 Book Your Service

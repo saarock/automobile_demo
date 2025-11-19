@@ -120,137 +120,143 @@ export function ContactSection() {
 
             <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-red-500 rounded-full mb-8"></div>
 
-            <form onSubmit={handleBooking} className="space-y-5">
-              {/* Name and Phone Row */}
-              <div className="grid md:grid-cols-2 gap-5">
+            <div>
+              <div>
+                <img src="van_org.jpg" alt="van image" />
+              </div>
+
+              <form onSubmit={handleBooking} className="space-y-5">
+                {/* Name and Phone Row */}
+                <div className="grid md:grid-cols-2 gap-5">
+                  <div className="group">
+                    <label className="block text-sm font-semibold text-slate-300 mb-2">
+                      Full Name
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Your full name"
+                      value={formData.name}
+                      onChange={(e) =>
+                        setFormData({ ...formData, name: e.target.value })
+                      }
+                      className="w-full px-5 py-3.5 rounded-xl bg-slate-800 border border-slate-600 text-white placeholder:text-slate-500 focus:border-blue-500 focus:bg-slate-700 outline-none transition-all group-hover:border-slate-500"
+                      required
+                    />
+                  </div>
+                  <div className="group">
+                    <label className="block text-sm font-semibold text-slate-300 mb-2">
+                      Mobile Number
+                    </label>
+                    <input
+                      type="tel"
+                      placeholder="0400 000 000"
+                      value={formData.phone}
+                      onChange={(e) =>
+                        setFormData({ ...formData, phone: e.target.value })
+                      }
+                      className="w-full px-5 py-3.5 rounded-xl bg-slate-800 border border-slate-600 text-white placeholder:text-slate-500 focus:border-blue-500 focus:bg-slate-700 outline-none transition-all group-hover:border-slate-500"
+                      required
+                    />
+                  </div>
+                </div>
+
+                {/* Location */}
                 <div className="group">
                   <label className="block text-sm font-semibold text-slate-300 mb-2">
-                    Full Name
+                    📍 Your Location
                   </label>
                   <input
                     type="text"
-                    placeholder="Your full name"
-                    value={formData.name}
+                    placeholder="e.g., Gungahlin, Tuggeranong, Queanbeyan, Canberra CBD"
+                    value={formData.location}
                     onChange={(e) =>
-                      setFormData({ ...formData, name: e.target.value })
+                      setFormData({ ...formData, location: e.target.value })
                     }
                     className="w-full px-5 py-3.5 rounded-xl bg-slate-800 border border-slate-600 text-white placeholder:text-slate-500 focus:border-blue-500 focus:bg-slate-700 outline-none transition-all group-hover:border-slate-500"
                     required
                   />
+                  <p className="text-xs text-slate-400 mt-2">
+                    We serve all Canberra & ACT including Queanbeyan
+                  </p>
                 </div>
+
+                {/* Service Type */}
                 <div className="group">
                   <label className="block text-sm font-semibold text-slate-300 mb-2">
-                    Mobile Number
+                    🔧 Service Required
                   </label>
-                  <input
-                    type="tel"
-                    placeholder="0400 000 000"
-                    value={formData.phone}
+                  <select
+                    value={formData.service}
                     onChange={(e) =>
-                      setFormData({ ...formData, phone: e.target.value })
+                      setFormData({ ...formData, service: e.target.value })
                     }
-                    className="w-full px-5 py-3.5 rounded-xl bg-slate-800 border border-slate-600 text-white placeholder:text-slate-500 focus:border-blue-500 focus:bg-slate-700 outline-none transition-all group-hover:border-slate-500"
+                    className="w-full px-5 py-3.5 rounded-xl bg-slate-800 border border-slate-600 text-white focus:border-blue-500 focus:bg-slate-700 outline-none transition-all group-hover:border-slate-500 cursor-pointer"
                     required
-                  />
-                </div>
-              </div>
-
-              {/* Location */}
-              <div className="group">
-                <label className="block text-sm font-semibold text-slate-300 mb-2">
-                  📍 Your Location
-                </label>
-                <input
-                  type="text"
-                  placeholder="e.g., Gungahlin, Tuggeranong, Queanbeyan, Canberra CBD"
-                  value={formData.location}
-                  onChange={(e) =>
-                    setFormData({ ...formData, location: e.target.value })
-                  }
-                  className="w-full px-5 py-3.5 rounded-xl bg-slate-800 border border-slate-600 text-white placeholder:text-slate-500 focus:border-blue-500 focus:bg-slate-700 outline-none transition-all group-hover:border-slate-500"
-                  required
-                />
-                <p className="text-xs text-slate-400 mt-2">
-                  We serve all Canberra & ACT including Queanbeyan
-                </p>
-              </div>
-
-              {/* Service Type */}
-              <div className="group">
-                <label className="block text-sm font-semibold text-slate-300 mb-2">
-                  🔧 Service Required
-                </label>
-                <select
-                  value={formData.service}
-                  onChange={(e) =>
-                    setFormData({ ...formData, service: e.target.value })
-                  }
-                  className="w-full px-5 py-3.5 rounded-xl bg-slate-800 border border-slate-600 text-white focus:border-blue-500 focus:bg-slate-700 outline-none transition-all group-hover:border-slate-500 cursor-pointer"
-                  required
-                >
-                  <option value="" className="bg-slate-800">
-                    Select your service...
-                  </option>
-                  <option value="General Service" className="bg-slate-800">
-                    🔧 General Service
-                  </option>
-                  <option value="Logbook Service" className="bg-slate-800">
-                    📋 Logbook Service
-                  </option>
-                  <option value="Brake Service" className="bg-slate-800">
-                    🛑 Brake Service
-                  </option>
-                  <option value="Battery Service" className="bg-slate-800">
-                    🔋 Battery Service
-                  </option>
-                  <option value="Cooling System" className="bg-slate-800">
-                    ❄️ Cooling System
-                  </option>
-                  <option
-                    value="Pre-Purchase Inspection"
-                    className="bg-slate-800"
                   >
-                    ✅ Pre-Purchase Inspection
-                  </option>
-                  <option value="Emergency Repair" className="bg-slate-800">
-                    🚨 Emergency Repair
-                  </option>
-                  <option value="Other" className="bg-slate-800">
-                    ➕ Other Service
-                  </option>
-                </select>
-              </div>
+                    <option value="" className="bg-slate-800">
+                      Select your service...
+                    </option>
+                    <option value="General Service" className="bg-slate-800">
+                      🔧 General Service
+                    </option>
+                    <option value="Logbook Service" className="bg-slate-800">
+                      📋 Logbook Service
+                    </option>
+                    <option value="Brake Service" className="bg-slate-800">
+                      🛑 Brake Service
+                    </option>
+                    <option value="Battery Service" className="bg-slate-800">
+                      🔋 Battery Service
+                    </option>
+                    <option value="Cooling System" className="bg-slate-800">
+                      ❄️ Cooling System
+                    </option>
+                    <option
+                      value="Pre-Purchase Inspection"
+                      className="bg-slate-800"
+                    >
+                      ✅ Pre-Purchase Inspection
+                    </option>
+                    <option value="Emergency Repair" className="bg-slate-800">
+                      🚨 Emergency Repair
+                    </option>
+                    <option value="Other" className="bg-slate-800">
+                      ➕ Other Service
+                    </option>
+                  </select>
+                </div>
 
-              {/* Message */}
-              <div className="group">
-                <label className="block text-sm font-semibold text-slate-300 mb-2">
-                  Additional Details (Optional)
-                </label>
-                <textarea
-                  placeholder="Tell us more about your vehicle or service needs..."
-                  value={formData.message}
-                  onChange={(e) =>
-                    setFormData({ ...formData, message: e.target.value })
-                  }
-                  className="w-full px-5 py-3.5 rounded-xl bg-slate-800 border border-slate-600 text-white placeholder:text-slate-500 focus:border-blue-500 focus:bg-slate-700 outline-none transition-all group-hover:border-slate-500 h-24 resize-none"
-                ></textarea>
-              </div>
+                {/* Message */}
+                <div className="group">
+                  <label className="block text-sm font-semibold text-slate-300 mb-2">
+                    Additional Details (Optional)
+                  </label>
+                  <textarea
+                    placeholder="Tell us more about your vehicle or service needs..."
+                    value={formData.message}
+                    onChange={(e) =>
+                      setFormData({ ...formData, message: e.target.value })
+                    }
+                    className="w-full px-5 py-3.5 rounded-xl bg-slate-800 border border-slate-600 text-white placeholder:text-slate-500 focus:border-blue-500 focus:bg-slate-700 outline-none transition-all group-hover:border-slate-500 h-24 resize-none"
+                  ></textarea>
+                </div>
 
-              {/* Submit Button */}
-              <button
-                type="submit"
-                disabled={submitted}
-                className={`w-full py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 active:scale-95 ${
-                  submitted
-                    ? "bg-green-500 text-white cursor-not-allowed"
-                    : "bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white shadow-lg hover:shadow-blue-600/50"
-                }`}
-              >
-                {submitted
-                  ? "✓ Redirecting to WhatsApp..."
-                  : "📱 Send Booking via WhatsApp"}
-              </button>
-            </form>
+                {/* Submit Button */}
+                <button
+                  type="submit"
+                  disabled={submitted}
+                  className={`w-full py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 active:scale-95 ${
+                    submitted
+                      ? "bg-green-500 text-white cursor-not-allowed"
+                      : "bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white shadow-lg hover:shadow-blue-600/50"
+                  }`}
+                >
+                  {submitted
+                    ? "✓ Redirecting to WhatsApp..."
+                    : "📱 Send Booking via WhatsApp"}
+                </button>
+              </form>
+            </div>
 
             <div className="mt-6 p-4 bg-blue-500/10 border border-blue-500/20 rounded-xl">
               <p className="text-slate-300 text-sm text-center">

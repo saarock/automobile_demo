@@ -1,5 +1,6 @@
 "use client";
 
+import { url } from "inspector";
 import { useState } from "react";
 
 export function ContactSection() {
@@ -31,7 +32,17 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 lg:py-32 bg-white">
+    <section
+      id="contact"
+      className="py-20 lg:py-32 bg-white"
+      style={{
+        background: "url(./van_org.jpg)",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+     filter: "blur(5px)", // Apply a subtle blur to the background
+      }}
+    >
       <div className="container mx-auto px-6 lg:px-12">
         <div className="text-center mb-16 animate-fade-in">
           <div className="inline-flex items-center bg-primary/10 border border-primary/20 text-primary px-5 py-2 rounded-full font-semibold mb-6 text-sm tracking-wide">
