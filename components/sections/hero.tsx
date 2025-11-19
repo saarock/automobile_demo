@@ -21,7 +21,7 @@ export function HeroSection() {
     <section className="relative bg-white py-20 lg:py-32 min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         <img
-          src="/van_org.jpg"
+          src="./van_org.jpg"
           alt="Mobile mechanics service van at customer location"
           className="w-full h-full object-cover bg-center bg-no-repeat bg-cover"
         />
