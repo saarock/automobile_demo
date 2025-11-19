@@ -1,6 +1,6 @@
 # Ignore node_modules
 /node_modules
-
+/.history
 # Ignore .next directory (used by Next.js)
 .next
 
