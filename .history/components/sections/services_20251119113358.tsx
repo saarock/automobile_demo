@@ -35,14 +35,14 @@ const services = [
   {
     title: "Cooling System",
     description: "Radiator service, coolant & leak detection",
-    price: "",
+    price: "From $200",
     duration: "1-1.5 hours",
     icon: "🌡️",
   },
   {
     title: "Pre-Purchase Inspection",
     description: "100+ point inspection with detailed report",
-    price: "",
+    price: "From $150",
     duration: "1-2 hours",
     icon: "🔍",
   },

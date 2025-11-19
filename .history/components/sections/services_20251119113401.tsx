@@ -42,7 +42,7 @@ const services = [
   {
     title: "Pre-Purchase Inspection",
     description: "100+ point inspection with detailed report",
-    price: "",
+    price: "From $150",
     duration: "1-2 hours",
     icon: "🔍",
   },
