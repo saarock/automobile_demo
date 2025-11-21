@@ -13,7 +13,7 @@ export function ServiceAreasSection() {
           </div>
           <h2 className="text-4xl lg:text-6xl font-black text-foreground mb-6 tracking-tight">
             Service Areas Across
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent mt-2">All Canberra & ACT</span>
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent mt-2">All Canberra & Surrounding areas</span>
           </h2>
           <p className="text-lg text-foreground/60 max-w-2xl mx-auto leading-relaxed">
             We proudly serve all Canberra suburbs plus Queanbeyan and surrounding ACT areas. Our mobile mechanics can reach you wherever you are.

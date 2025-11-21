@@ -12,9 +12,9 @@ export function Header() {
     <header className="bg-white/80 backdrop-blur-xl border-b border-border sticky top-0 z-50 luxury-shadow">
       <div className="container mx-auto px-6 py-5">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-9">
             <div className="w-10 h-10 flex justify-center items-center">
-              <img src="./logo.jpeg" alt="logo" width={200} height={200} style={{scale: "220%"}}/>
+              <img src="./logo.jpeg" alt="logo" width={200} height={200} style={{scale: "200%"}}/>
             </div>
             <div>
               <h1 className="text-foreground font-black text-lg tracking-tight">
